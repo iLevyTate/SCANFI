@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2015", // Target ES2015 (ES6) for better performance in modern environments
+    "target": "es6", // Target ES6 for better performance in modern environments
     "lib": [
       "dom",
       "dom.iterable",
@@ -12,7 +12,7 @@
     "noEmit": true, // Prevent TypeScript from emitting compiled files (typically used with Next.js)
     "esModuleInterop": true, // Enable compatibility between CommonJS and ESModules
     "module": "esnext", // Use ESNext module resolution, typically for bundlers like Webpack
-    "moduleResolution": "bundler", // Resolve modules according to bundler (Webpack/Vite) behavior
+    "moduleResolution": "node", // Resolve modules according to node behavior
     "resolveJsonModule": true, // Allow JSON imports
     "isolatedModules": true, // Ensure each file is treated as an isolated module (required by Next.js)
     "jsx": "preserve", // Keep JSX in the output (used in React projects)
@@ -31,7 +31,8 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "allowSyntheticDefaultImports": true // Allow synthetic default imports
   },
   "include": [
     "next-env.d.ts", // Include Next.js environment types
