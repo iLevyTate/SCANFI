@@ -6,31 +6,43 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
     "@radix-ui/react-scroll-area": "^1.0.4",
     "@radix-ui/react-tooltip": "^1.0.6",
     "@tensorflow/tfjs": "^4.21.0",
+    "@tensorflow/tfjs-node": "^4.21.0",
+    "@tensorflow/tfjs-node-gpu": "^4.21.0",
+    "bottleneck": "^2.19.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "experts": "^1.6.1",
     "lucide-react": "^0.274.0",
-    "next": "^14.2.11",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^14.2.13",
+    "openai": "^4.63.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.13",
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "^10.4.20",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "eslint-plugin-import": "^2.24.0",
     "postcss": "^8.4.45",
     "tailwindcss": "^3.4.11",
+    "ts-jest": "^29.2.5",
     "typescript": "5.2.2"
+  },
+  "jest": {
+    "preset": "jest-puppeteer",
+    "testTimeout": 30000
   }
 }
