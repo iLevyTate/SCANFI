@@ -54,6 +54,5 @@ export OPENAI_API_KEY=your-openai-api-key
 ```
 
 Remember to replace `your-openai-api-key` with your actual OpenAI API key.
-```
 
-![Logo2](https://github.com/user-attachments/assets/a7522125-acb8-418c-ad35-1ea0174af4f3)
+![Logo2](https://github.com/user-attachments/assets/edf9b185-3641-481e-b209-377fc2052eaa)
